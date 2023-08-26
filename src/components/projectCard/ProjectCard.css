@@ -1,0 +1,215 @@
+
+.projectCardBx{
+    position: relative ;
+    width: 100% ;
+    min-height:100vh ;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+   
+
+}
+.projectCard{
+    position: relative ;
+    width:90% ;
+    margin-bottom: 90px;
+    height: 600px;
+    display: flex;
+    padding-top: 80px;
+    
+}
+
+.img{
+    position: relative ;
+    width: 70% ;
+    height: 400px ;
+    object-fit:cover;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid  #00aeff;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+.img img {
+    position: relative;
+    width: 100% ;
+    height: 100%;
+}
+.projectName{
+    position: relative ;
+    width: 300px ;
+    display: flex;
+    font-size: 4em;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bolder;
+    background-image: url(./nigth.webp);
+    background-size: contain;
+    color: rgba(0, 174, 255,0.2);
+    background-clip: text;
+}
+
+.projectInfo{
+    position: relative ;
+    padding: 10px;
+    font-size: 1em;
+    width: 350px;
+    color: whitesmoke;
+    z-index: 3;
+    font-family: 'Emberly';
+}
+.img:hover  {
+    -webkit-box-shadow: 0px 0px 32px -11px rgba(0,174,255,1);
+    -moz-box-shadow: 0px 0px 32px -11px rgba(0,174,255,1);
+    box-shadow: 0px 0px 32px -11px rgba(0,174,255,1);
+}
+
+@media (max-width: 904px){
+
+    .projectCard{
+        position: relative ;
+        width:80% ;
+    }
+    
+    .img{
+        position: relative ;
+        width: 350px ;
+        height: 250px ;
+    }
+    .projectName{
+        font-size: 20px;
+       
+    }
+    .projectInfo{
+        position: relative ;
+        right: 0px;
+        margin: 0 auto;
+        width: 350px;
+        margin-bottom: 10px;
+        top: 0px;
+    }
+
+}
+
+
+
+/*.projectCardBx{
+    position: relative ;
+    width: 100% ;
+    min-height:100vh ;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+
+}
+.projectCard{
+    position: relative ;
+    width:500px ;
+}
+
+.img{
+    position: relative ;
+    width: 450px ;
+    height: 300px ;
+    object-fit:cover;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid  #00aeff;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+.img img {
+    position: relative;
+    width: 100% ;
+    height: 100%;
+}
+.projectName{
+    position: relative ;
+    width: 100% ;
+    display: flex;
+    align-items: center;
+    justify-content: end ;
+    font-size: 25px;
+    padding: 20px;
+    color: rgb(0, 174, 255);
+}
+.projectInfo{
+    position: absolute ;
+    padding: 10px;
+    font-size: 1em;
+    width: 350px;
+    color: whitesmoke;
+    z-index: 3;
+    background: rgba(0, 174, 255,0.7);
+    backdrop-filter: blur(30deg); 
+    border-radius: 5px;
+    right: -190px;
+    top: 230px;
+
+}
+.img:hover  {
+    -webkit-box-shadow: 0px 0px 32px -11px rgba(0,174,255,1);
+    -moz-box-shadow: 0px 0px 32px -11px rgba(0,174,255,1);
+    box-shadow: 0px 0px 32px -11px rgba(0,174,255,1);
+}
+
+@media (max-width: 904px){
+
+    .projectCard{
+        position: relative ;
+        width:80% ;
+    }
+    
+    .img{
+        position: relative ;
+        width: 350px ;
+        height: 250px ;
+    }
+    .projectName{
+        font-size: 20px;
+       
+    }
+    .projectInfo{
+        position: relative ;
+        right: 0px;
+        margin: 0 auto;
+        width: 350px;
+        margin-bottom: 10px;
+        top: 0px;
+    }
+
+}
+@media (max-width: 451px){
+    .projectCard{
+        position: relative ;
+        width:100% ;
+    }
+    
+    .img{
+        position: relative ;
+        width: 300px ;
+        height: 200px ;
+    }
+    .projectName{
+        font-size: 20px;
+       
+    }
+    .projectInfo{        
+        width: 300px;
+        height: 100px;
+        font-size: 0.7em;
+        top: 0px;
+    }
+    .projectName{
+
+        width: 90% ;
+    }
+
+}*/
+
