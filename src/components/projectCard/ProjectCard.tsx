@@ -2,9 +2,16 @@ import "./ProjectCard.css"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import  { useEffect, useRef, useState } from 'react';
+import { PropsWithChildren } from "react";
 
-
-function ProjectCard(props:{ name: string, urlInfo: string, urlPhoto: string, info: string }) {
+interface ProjectCardProps extends PropsWithChildren<{
+    name: string;
+    urlPhoto: string;
+    urlInfo: string;
+    info: string;
+  }> {}
+  
+  function ProjectCard(props: ProjectCardProps) {
 
     useEffect(() => {
         AOS.init();
