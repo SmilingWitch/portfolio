@@ -3,10 +3,15 @@ import { BsStarFill } from 'react-icons/bs'
 import  { useEffect, useRef, useState } from 'react';
 import MainButton from "../mainButton/MainButton";
 import { Link } from 'react-router-dom';
+import {motion} from 'framer-motion'
 
 function Home() {
     return (
-        <div className="background">
+        <motion.div className="background"
+                    initial = {{opacity: 0}}
+                    animate = {{opacity: 1}}
+                    exit = {{opacity:0}}
+                    >
             <div className="starsBx">
                 <div className="lineBx">
                     <div className="line" style={{ "--i": 5 } as React.CSSProperties}></div>
@@ -63,14 +68,14 @@ function Home() {
                         <div className="header">Daniela Yero</div>
                         <Link to= "/about">
                             <div className="principalBtn">
-                                <MainButton></MainButton>
+                                <MainButton info ="Meet me" ></MainButton>
                             </div>
                         </Link>
                     </div>
                     
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

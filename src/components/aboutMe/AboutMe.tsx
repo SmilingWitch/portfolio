@@ -89,12 +89,6 @@ function AboutMe() {
                                             </div>
                                             Vite
                                         </li>
-                                        <li data-aos="fade-up">
-                                            <div className="logo">
-                                                <img src={typescript} alt="" /> 
-                                            </div>
-                                            Low-code tools
-                                        </li>
                                     </ul>
                                 </div>
                             </div>

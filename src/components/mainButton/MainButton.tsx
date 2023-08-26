@@ -2,10 +2,10 @@ import "./MainButton.css"
 import {AiOutlineArrowRight} from "react-icons/ai"
 import { BsStarFill } from 'react-icons/bs'
 
-function MainButton() {
+function MainButton(props:{ info: string }) {
     return (
         <div className="mBtn">
-            Meet me
+            {props.info}
             <span>
                 <div className="starIcon">
                     <BsStarFill></BsStarFill>

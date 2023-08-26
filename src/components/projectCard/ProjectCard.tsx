@@ -12,17 +12,17 @@ function ProjectCard(props:{ name: string, urlInfo: string, urlPhoto: string, in
 
     return (
         <div className="projectCardBx">
-            <div className="projectCard" 
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="center-center">
-                
+            <div className="projectCard">
                 <div className="projectInfo">
-                    <div className="projectName">
-                        <span>{props.name}</span>
+                    <div className="projectName" data-aos="fade-right">
+                        <a href={props.urlInfo}>
+                            <span>{props.name}</span>
+                        </a>
                     </div>
-                    <p>{props.info}</p>
+                    <p data-aos="fade-left">{props.info}</p>
                 </div>
-                <div className="img">
+                <div className="img" data-aos="flip-right" >
+                    
                     <img src={props.urlPhoto} alt="" />
                 </div>
 

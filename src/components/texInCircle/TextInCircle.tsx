@@ -18,7 +18,7 @@ function TextInCircle() {
               <span
                 key={i}
                 style={{
-                  transform: `rotate(${deg * i}deg)`,
+                  transform: `rotate(${10 * i}deg)`,
                 }}
               >
                 <a href= {urls[i]}>{icon}</a>

@@ -53,3 +53,36 @@
         transform:scale(1);
     }
 }
+
+@media (max-width: 540px){
+    
+    .moonBx2{
+        position: relative;
+        width: 350px ;
+         height: 350px ;
+        margin: 0 auto;
+    }
+    
+    .moon4{
+        position: absolute ;
+        width: 300px ;
+        height: 300px ;
+        
+    }
+    .moon5{
+        position: absolute ;
+        width: 250px ; 
+        height: 250px ;
+        
+    }
+    .moon6{
+        position: relative ;
+        width: 200px ;
+        height: 200px ;
+    }
+    .moonBx2 img{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+    }
+}   

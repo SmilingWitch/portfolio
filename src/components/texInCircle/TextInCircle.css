@@ -9,7 +9,6 @@
     font-weight: bold;
     z-index: -1000000;
     
-    
   }
   
   .spinning-text {
@@ -49,49 +48,20 @@
 
     }
   }
-  @keyframes spin1 {
-    0% {
-      transform: rotate(150deg);
-      opacity: 1;
-    }
-    100% {
-      transform: rotate(360deg);
-      opacity: 0;
-    }
-  }
+  
 
-
-@media (max-width: 1153px){
+@media (max-width: 540px){
   .spinning-text-wrapper {
-    width: 650px;
-    height: 650px;
-    font-size: 2rem;
+    width: 400px;
+    height: 400px; 
   }
-  .spinning-text {
-    width: 90%;
-    height: 90%;
-    animation: none;
-    transform: rotate(150deg);
-  }
-
-  .spinning-text-wrapper {
+  .spinning-text{
     position: relative;
-    width: 600px;
-    height: 520px;     
-  }
-
-  .spinning-text span {
-    position: absolute;
-    top: 0;
-    left: 40%;
-    transform-origin: 0 300px;
-    cursor: pointer;
+    top: -3px;
     
   }
-
-}
-@media (max-width: 570px){
-  .spinning-text-wrapper {
-    font-size: 1.5rem;  
+  .spinning-text-wrapper:focus{
+    animation-play-state: paused;
   }
+  
 }

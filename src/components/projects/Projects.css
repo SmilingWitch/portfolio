@@ -26,6 +26,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    background: radial-gradient(rgb(21, 18, 73),rgb(4, 3, 24),rgb(4, 3, 24));
 }
 .separator{
     position: relative ;
@@ -104,6 +105,62 @@
     height: 450px;
     border-radius: 50% ;  
 
+}
+.btnMain{
+    position: absolute ;
+    width: 150px ;
+    height: 40px ;
+    border-radius: 20px;
+    border: solid 1px rgb(21, 21, 170);
+    background: rgb(21, 21, 170);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto ;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    top: 550px;
+}
+@media (max-width: 540px){
+    .moonBx1{
+        position: relative;
+        width: 350px ;
+         height: 350px ;
+        margin: 0 auto;
+    }
+    
+    .moon1{
+        position: absolute ;
+        width: 300px ;
+        height: 300px ;
+        
+    }
+    .moon2{
+        position: absolute ;
+        width: 250px ; 
+        height: 250px ;
+        
+    }
+    .moon3{
+        position: relative ;
+        width: 200px ;
+        height: 200px ;
+    }
+    .moonBx1 img{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+    }
+    .separator{
+        font-size: 1.5em;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .btnMain{
+        top: 700px;
+    }
+     
 }
 
 

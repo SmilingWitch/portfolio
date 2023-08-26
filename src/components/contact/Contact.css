@@ -68,3 +68,41 @@
     justify-content: center;  
     
 }
+
+@media (max-width: 540px){
+    .moonBxSP{
+        position: relative;
+        width: 350px ;
+         height: 350px ;
+        margin: 0 auto;
+        top: 100px;
+    }
+    
+    .moon1SP{
+        position: absolute ;
+        width: 300px ;
+        height: 300px ;
+        
+    }
+    .moon2SP{
+        position: absolute ;
+        width: 250px ; 
+        height: 250px ;
+        
+    }
+    .moon3SP{
+        position: relative ;
+        width: 200px ;
+        height: 200px ;
+    }
+    .moonBxSP img{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+    }
+    .socialMedia{
+        width: 400px ;
+        height: 400px;
+        border: transparent;
+    }
+}  

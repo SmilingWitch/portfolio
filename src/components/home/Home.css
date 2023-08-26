@@ -13,7 +13,7 @@
 .background{
     position: relative ;
     width: 100% ;
-    min-height: 100vh ;
+    min-height: 120vh ;
     z-index: 10;
     background: radial-gradient(rgb(5, 5, 51), rgb(5, 5, 46),rgb(12, 12, 107));
 }
