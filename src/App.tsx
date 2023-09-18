@@ -8,15 +8,16 @@ import {AnimatePresence} from 'framer-motion'
 
 function App() {
   return (
-    < AnimatePresence>
+   < AnimatePresence>
     <Router>
         <Routes>
-              <Route path = "/" element = { <Home/> } />
-              <Route path = "/about" element = {<Projects/>}/>
+              <Route path = "portfolio/" element = { <Home/> } />
+              <Route path = "portfolio/about" element = {<Projects/>}/>
         </Routes>
   </Router>
- 
     </AnimatePresence>
+
+    
   )
 }
 

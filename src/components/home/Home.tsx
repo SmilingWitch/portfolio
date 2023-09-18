@@ -66,7 +66,7 @@ function Home() {
                 <div className="info">
                     <div className="centerContent">
                         <div className="header">Daniela Yero</div>
-                        <Link to= "/about">
+                        <Link to= "/portfolio/about">
                             <div className="principalBtn">
                                 <MainButton info ="Meet me" ></MainButton>
                             </div>

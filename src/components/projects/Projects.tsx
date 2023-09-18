@@ -17,6 +17,7 @@ function Projects() {
     }, [])
     
     return (
+
         <motion.div className="background2"
                     initial = {{opacity: 0}}
                     animate = {{opacity: 1}}
@@ -57,14 +58,15 @@ function Projects() {
                     <div className="moon3"> </div>
                     <img src="moon.svg" alt="" />   
                 </div>
-                    <div className="btnMain">
-                    <Link to= "/">
+                   <div className="btnMain">
+                    <Link to= "/portfolio/">
                         <MainButton info = "Home"/>
                     </Link>   
                     </div>
-             </div>
-             
-             <AboutMe/>
+                </div>
+                
+              <AboutMe/>
+
              <div className="separator">
                     <h1 data-aos="fade-up" >Some things I've Built</h1>
              </div>
@@ -92,11 +94,14 @@ function Projects() {
                                 info ="Website to buy cacti and obtain information about them" >
                     </ProjectCard>
                 </div>
-                <Contact/>
-            </div>
+    <Contact/>
+    </div>
 
-        </motion.div>
+    </motion.div>
+    
+             
     );
 }
+
 
 export default Projects 
