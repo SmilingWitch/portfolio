@@ -61,7 +61,7 @@ function Projects() {
                         <MainButton info = "Home"/>
                     </Link>   
                     </div>
-                </div>st
+                </div>
                 
               <AboutMe/>
 
@@ -73,8 +73,8 @@ function Projects() {
                     className="section first">
                     <ProjectCard  name = "Yield Farming Platform"  
                                 urlPhoto = "./pokeroi.png" 
-                                urlInfo = "https://github.com/SmilingWitch/PkrRmaiFarm-ui"
-                                info ="A Web3 platform interface for cryptocurrency exchange can be translated as"
+                                urlInfo = "https://smilingwitch.github.io/dex-ui/"
+                                info ="A Web3 platform interface for cryptocurrency exchange"
                                 number = {1} >
                     </ProjectCard>
                 </div>
@@ -82,17 +82,25 @@ function Projects() {
                     <ProjectCard  name = "Pet Park"  
                                 urlPhoto = "./PetPark.png" 
                                 urlInfo = "https://github.com/SmilingWitch/petpark-ui"
-                                info ="Website for pet adoption and the purchase of pet supplies." 
+                                info ="Website for pet adoption and the purchase of pet supplies(under development)" 
                                 number = {2}>
                     </ProjectCard>
                 </div>
-                <div  
-                    className="section therd">
+                <div className="section therd">
                     <ProjectCard    name = "Cactus Store"  
                                 urlPhoto = "./cactus.png" 
                                 urlInfo = "https://github.com/SmilingWitch/CactusStore"
-                                info ="Website to buy cacti and obtain information about them" 
+                                info ="Website to buy cactus and obtain information about them" 
                                 number = {3}>
+                    </ProjectCard>
+                </div>
+                <div className="section four">
+                    <ProjectCard    name = "Clinic"  
+                                urlPhoto = "./Clinic.png" 
+                                urlInfo = "https://smilingwitch.github.io/clinic/"
+                                info ="Multiservice clinic with online appointment (under development)
+                                " 
+                                number = {4}>
                     </ProjectCard>
                 </div>
     <Contact/>

@@ -91,6 +91,11 @@
         height: 400px;
         border: transparent;
     }
+    .contactHeader{
+        width: 90%;
+        font-size: 1.8em;
+        margin: 0 auto;
+    }
 }  
 
 

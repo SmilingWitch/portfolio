@@ -41,10 +41,11 @@
     width: 300px ;
     font-size: 2em;
     text-align: center;
+    text-transform: uppercase;
 
 }
 .projectName a span{
-    
+    font-weight: lighter;
     color: rgb(17, 157, 221);
 }
 

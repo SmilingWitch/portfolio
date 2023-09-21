@@ -55,31 +55,13 @@
   }
   
 
-@media (max-width: 540px){
+@media (max-width: 1012px){
   .spinning-text-wrapper {
-    width: 400px;
-    height: 400px; 
-  }
-  .spinning-text{
-    position: relative;
-    top: -3px;
-    
-  }
-  .spinning-text-wrapper:focus{
-    animation-play-state: paused;
+    width: 380px;
+    height: 380px;
+    top: -20px;
+
   }
   
 }
 
-
-
-/* icons.map(( icon, i: number) => (
-              <span
-                key={i}
-                style={{
-                  transform: `rotate(${10 * i}deg)`,
-                }}
-              >
-                <a href= {urls[i]}>{icon}</a>
-              </span>
-              ))*/

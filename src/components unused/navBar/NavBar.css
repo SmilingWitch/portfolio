@@ -1,0 +1,77 @@
+  
+.bar {
+      position: absolute;
+      width: 100%  ;
+      height: 50px ;
+      z-index: 10;
+      display: flex ;
+      align-items:center;
+      justify-content: center;
+  }
+  .list1{
+    position: relative ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 80%;
+  }
+
+.bar .list1 ul{
+    position: relative;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    width: 50%;
+    height: 40px;
+    background: rgba(35, 69, 161, 0.4);
+    border-radius: 5px;
+    
+
+}
+.bar ul li{
+  position: relative;
+  width: 100%;
+  list-style: none ;
+  color: rgb(0, 174, 255);
+  transition: 0.2s linear; 
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  
+  margin-right: 25px;
+}
+
+.bar ul li .barIcon{
+  font-size: 20px;  
+  cursor: pointer;
+  display: flex ;
+  align-items: center ;
+  justify-content: center;
+}
+
+.bar ul li:hover .barIcon {
+    color: #e9b553;
+    filter: drop-shadow(2px 1px 1px orangered);
+}
+
+
+@media (max-width: 733px){
+  .bar .list1 ul{
+    width: 100%;
+    font-size: 0.8em;
+}
+.bar ul li .barIcon{
+  margin-right: 5px;
+  font-size: 1.2em;  
+  cursor: pointer;
+}
+.bar ul li span{
+  color:  rgb(0, 174, 255);;
+}
+  
+}
+
+
+  
+ 
