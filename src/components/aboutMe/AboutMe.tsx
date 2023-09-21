@@ -2,7 +2,8 @@ import "./AboutMe.css"
 import { BsStarFill,BsArrowRightCircle,BsArrowLeftCircle } from 'react-icons/bs'
 import  { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import gif1 from './the astronaut.gif'
+import gif1 from './wave(6).svg'
+import gif2 from './wave(5).svg'
 import {IoLogoJavascript} from "react-icons/io"
 import javascript from "./javascript-1.svg"
 import typescript from "./typescript.svg"
@@ -23,6 +24,9 @@ function AboutMe() {
 
     return (<>
         <div className="background1">
+            <div className="wave">
+                <img src={gif1} alt="" />
+            </div>
             <div className="Bx">
                 <div className="pContent">
                     <div className="about">
@@ -31,68 +35,74 @@ function AboutMe() {
                         </div>
                         <div className="flex">
                             <div data-aos="fade-left" className="aboutInfo">
-                                <p>I am a Biomedical Engineer passionate about web programming. As I always like to say: I was carried away by a CSS code.</p>
-                            </div>
-                            <div className="gif1">
-                                <img src={gif1} alt="" />
+                                <p>                              
+                                    I am a passionate biomedical engineer with a strong interest in web development. 
+                                    My fascination with technology and desire to create innovative solutions led me to delve into the world of web development.
+                                    Currently, I am expanding my skills in the field of design to complement my web development experience. I love exploring new ideas and finding ways to combine my passion for technology with visually appealing aesthetics.
+                                    {/*¡Gracias por visitar mi portafolio y espero poder colaborar contigo en futuros proyectos!"*/}
+                                    </p>
+                                    <span>- As I always like to say: I was carried away by a CSS code -</span>
                             </div>
                         </div>
-                        
                     </div>
                     
-                        <div data-aos="fade-right" className="skill">
-                            <div className="centerSkills">
+                    
+                        <div  className="skill">
+                            <div className="centerSkills" data-aos="fade-right">
                                 <div className="header2">
                                     Skills
                                 </div>
                                 <div className="skillsList">
                                     <ul>
-                                        <li data-aos="fade-up">
-                                            <div className="logo">
-                                                <img src={javascript} alt="" /> 
-                                            </div>
-                                            JavaScript
-                                        </li>
-                                        <li data-aos="fade-up">
-                                            <div className="logo">
-                                                <img src={typescript} alt="" /> 
-                                            </div>
-                                            TypeScript
-                                        </li>
-                                        <li data-aos="fade-up">
+                                    <li data-aos="fade-up">
                                             <div className="logo">
                                                 <img src={html} alt="" /> 
                                             </div>
-                                            HTML
+                                           <span>HTML</span> 
                                         </li>
                                         <li data-aos="fade-up">
                                             <div className="logo">
                                                 <img src={css} alt="" /> 
                                             </div>
-                                            CSS
+                                            <span>CSS</span> 
+                                        </li>
+                                        <li data-aos="fade-up">
+                                            <div className="logo">
+                                                <img src={javascript} alt="" /> 
+                                            </div>
+                                            <span>JavaScript</span>
+                                        </li>
+                                        <li data-aos="fade-up">
+                                            <div className="logo">
+                                                <img src={typescript} alt="" /> 
+                                            </div>
+                                            <span>TypeScript</span>
                                         </li>
                                         <li data-aos="fade-up">
                                             <div className="logo">
                                                 <img src={react} alt="" /> 
                                             </div>
-                                            React
-                                        </li>
-                                        <li data-aos="fade-up">
-                                            <div className="logo">
-                                                <img src={git} alt="" /> 
-                                            </div>
-                                            Git
+                                            <span>React</span>
                                         </li>
                                         <li data-aos="fade-up">
                                             <div className="logo">
                                                 <img src={vite} alt="" /> 
                                             </div>
-                                            Vite
+                                            <span>Vite</span>
                                         </li>
+                                        <li data-aos="fade-up">
+                                            <div className="logo">
+                                                <img src={git} alt="" /> 
+                                            </div>
+                                           <span>Git</span> 
+                                        </li>    
                                     </ul>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
+                        <div className="wave">
+                         <img src={gif2} alt="" />
+                    </div> 
                 </div>
      
             </div>
