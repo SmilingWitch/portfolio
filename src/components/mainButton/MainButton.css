@@ -12,6 +12,7 @@ letter-spacing: 2px ;
 padding-left: 40px;
 transition: 0.5s ;
 overflow: hidden;
+font-size: 1em;
 }
 
 .mBtn:hover{
@@ -42,6 +43,7 @@ overflow: hidden;
     justify-content: center;
     color: rgb(233, 181, 83);
     filter: drop-shadow(2px 1px 1px orangered);
+    animation: star 1s ease-in-out  infinite normal forwards;
 }
 
 .mBtn:hover span{
@@ -56,16 +58,28 @@ overflow: hidden;
     background: rgba(255, 255, 255, 0.5);
     transform: translateX(-150px) skewX(30deg);
     transition: 0.5s ease-in-out;
+    transition: 0.3s;
 }
 .mBtn:hover:after{
     transform: translateX(150px) skewX(30deg);
 }
 
-@media (max-width: 540px){
+
+@keyframes star {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        backdrop-filter:  contrast(80%);
+    }
+    
+}
+
+@media (max-width: 1036px){
 
     .mBtn{
-        font-size: 0.8em;
-        width: 80px ;
-        height: 40px ;
+        
+        font-size: 0.9em;
     }
 }
