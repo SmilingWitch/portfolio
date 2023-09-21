@@ -1,7 +1,6 @@
 .moonBx2{
     position: relative;
-    width: 350px ;
-    height: 350px ;
+    width: 100% ;
     display: flex ;
     align-items: center ;
     justify-content: center; 
@@ -9,35 +8,36 @@
 
 .moon4{
     position: absolute ;
-    width: 400px ;
-    height: 400px ;
+    width: var(--moonSize) ;
+    height: var(--moonSize) ;
     border-radius: 50% ;
     background: rgb(9, 9, 88);
     animation: moonRings 2s ease-in-out 0.2s infinite normal ;
 }
+
 .moon5{
     position: absolute ;
-    width: 350px ; 
-    height: 350px ;
     border-radius: 50% ;
     background: rgba(255, 255, 255, 0.2);
     animation: moonRings 2s ease-in-out 0.2s infinite normal ;
+    width: var(--light1) ;
+    height: var(--light1) ;
 }
 .moon6{
     position: relative ;
-    width: 300px ;
-    height: 300px ;
     border-radius: 50% ;
     background: rgb(199, 196, 196);
     -webkit-box-shadow: 0px 0px 4px 0px rgba(255,255,255,1);
     -moz-box-shadow: 0px 0px 4px 0px rgba(255,255,255,1);
     box-shadow: 0px 0px 4px 0px rgba(255,255,255,1);
+    width: var(--light2) ;
+    height: var(--light2) ;
     
 }
 .moonBx2 img{
     position: absolute;
-    width: 450px;
-    height: 450px;
+    width: var(--iconsize);
+    height: var(--iconsize);
     border-radius: 50% ;  
 
 }
@@ -53,36 +53,42 @@
         transform:scale(1);
     }
 }
-
-@media (max-width: 540px){
     
-    .moonBx2{
-        position: relative;
-        width: 350px ;
-         height: 350px ;
-        margin: 0 auto;
-    }
+    @media(max-width:1036px){
+        .cont2{
+            display: block;
+        }
+        .moonBx2{
+            width: 100%;
+        }
+        .moonBx2{
+            position: relative;
+            width: 350px ;
+             height: 350px ;
+            margin: 0 auto;
+        }
+        
+        .moon4{
+            position: absolute ;
+            width: 300px ;
+            height: 300px ;
+            
+        }
+        .moon5{
+            position: absolute ;
+            width: 250px ; 
+            height: 250px ;
+            
+        }
+        .moon6{
+            position: relative ;
+            width: 200px ;
+            height: 200px ;
+        }
+        .moonBx2 img{
+            position: absolute;
+            width: 300px;
+            height: 300px;
+        }
     
-    .moon4{
-        position: absolute ;
-        width: 300px ;
-        height: 300px ;
-        
-    }
-    .moon5{
-        position: absolute ;
-        width: 250px ; 
-        height: 250px ;
-        
-    }
-    .moon6{
-        position: relative ;
-        width: 200px ;
-        height: 200px ;
-    }
-    .moonBx2 img{
-        position: absolute;
-        width: 300px;
-        height: 300px;
-    }
 }   
