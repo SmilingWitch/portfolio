@@ -9,6 +9,7 @@ interface ProjectCardProps extends PropsWithChildren<{
     urlPhoto: string;
     urlInfo: string;
     info: string;
+    number: number
   }> {}
   
   function ProjectCard(props: ProjectCardProps) {
@@ -21,6 +22,9 @@ interface ProjectCardProps extends PropsWithChildren<{
         <div className="projectCardBx">
             <div className="projectCard">
                 <div className="projectInfo">
+                    <div className="number">
+                        0{props.number}
+                    </div>
                     <div className="projectName" data-aos="fade-right">
                         <a href={props.urlInfo}>
                             <span>{props.name}</span>
