@@ -1,14 +1,14 @@
 .spinning-text-wrapper {
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     display: grid;
     place-items: center;
     font-size: 2rem;
     font-weight: bold;
     z-index: -1000000;
-    
+    top: 20px;
   }
   
   .spinning-text {
@@ -16,24 +16,29 @@
     border-radius: 50%;
     width: 100%;
     height: 100%;
-    margin: 0;
+    margin: 0 ;
     z-index: 10000;
-    animation: spin 10s linear infinite ;
-    top: 30px;
-    
-    
-    
+    top: 16px;
   }
+
+  .git{
+    animation: spin 10s 1s linear infinite ;
+  }
+  .tel{
+    animation: spin 10s  linear infinite ;
+  }
+
   .spinning-text-wrapper:hover .spinning-text{
     animation-play-state: paused;
   }
+
 
 
   .spinning-text span {
     position: absolute;
     top: 0;
     left: 50%;
-    transform-origin: 0 250px;
+    transform-origin: center 250px;
     cursor: pointer;
     color: rgb(44, 44, 177);
     
@@ -65,3 +70,16 @@
   }
   
 }
+
+
+
+/* icons.map(( icon, i: number) => (
+              <span
+                key={i}
+                style={{
+                  transform: `rotate(${10 * i}deg)`,
+                }}
+              >
+                <a href= {urls[i]}>{icon}</a>
+              </span>
+              ))*/
