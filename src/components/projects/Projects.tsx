@@ -9,6 +9,7 @@ import Contact from "../contact/Contact";
 import MainButton from "../mainButton/MainButton";
 import { Link } from 'react-router-dom';
 import {motion} from 'framer-motion'
+import Moon from "../moon/Moon";
 
 function Projects() {
 
@@ -53,22 +54,19 @@ function Projects() {
                     </div>
                 </div>
                 <div className="moonBx1">
-                    <div className="moon1"></div>
-                    <div className="moon2"></div>
-                    <div className="moon3"> </div>
-                    <img src="moon.svg" alt="" />   
+                <Moon moonSize= {400} light1= {350} light2 = {300} iconsize = {450}/>
                 </div>
                    <div className="btnMain">
                     <Link to= "/portfolio/">
                         <MainButton info = "Home"/>
                     </Link>   
                     </div>
-                </div>
+                </div>st
                 
               <AboutMe/>
 
-             <div className="separator">
-                    <h1 data-aos="fade-up" >Some things I've Built</h1>
+             <div className="separator" data-aos="fade-up">
+                    Some things I've Built
              </div>
             <div className="frontBack">
                 <div  
@@ -76,14 +74,16 @@ function Projects() {
                     <ProjectCard  name = "Yield Farming Platform"  
                                 urlPhoto = "./pokeroi.png" 
                                 urlInfo = "https://github.com/SmilingWitch/PkrRmaiFarm-ui"
-                                info ="A Web3 platform interface for cryptocurrency exchange can be translated as" >
+                                info ="A Web3 platform interface for cryptocurrency exchange can be translated as"
+                                number = {1} >
                     </ProjectCard>
                 </div>
                 <div className="section second">
                     <ProjectCard  name = "Pet Park"  
                                 urlPhoto = "./PetPark.png" 
                                 urlInfo = "https://github.com/SmilingWitch/petpark-ui"
-                                info ="Website for pet adoption and the purchase of pet supplies." >
+                                info ="Website for pet adoption and the purchase of pet supplies." 
+                                number = {2}>
                     </ProjectCard>
                 </div>
                 <div  
@@ -91,7 +91,8 @@ function Projects() {
                     <ProjectCard    name = "Cactus Store"  
                                 urlPhoto = "./cactus.png" 
                                 urlInfo = "https://github.com/SmilingWitch/CactusStore"
-                                info ="Website to buy cacti and obtain information about them" >
+                                info ="Website to buy cacti and obtain information about them" 
+                                number = {3}>
                     </ProjectCard>
                 </div>
     <Contact/>
