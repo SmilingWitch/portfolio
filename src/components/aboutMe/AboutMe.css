@@ -117,20 +117,14 @@
 .skillsList ul li{
     position: relative ;
     width: 90%;
-    
     height: 100px ;
-   /* background: rgba(66, 61, 156, 0.3);
-    backdrop-filter: blur(30px);
-    border-radius: 5px;*/
     margin: 10px;
     list-style: none;
     display: flex ;
     align-items: center ;
     justify-content: space-around;
     transition: 1s ease;
-    border-bottom: 1px solid rgba(17, 157, 221, 0.829);
-    
-    
+    border-bottom: 1px solid rgba(17, 157, 221, 0.829); 
 }
 .skillsList ul li span{
     position: relative;
@@ -235,7 +229,7 @@
     }
     .aboutInfo{
         font-size: 1.2em;
-        letter-spacing: 2pz;
+        letter-spacing: 2px;
         width: 50%;
         margin-right: 20px;
     }
@@ -269,12 +263,32 @@
         margin: 0 auto;
         margin-bottom: 50px;
     }
+    .aboutInfo span{
+        font-size: 1.6em;
+    }
     .gif1{
         width: 300px;
         height: 300px;
         margin:  0 auto;
     }
-    
+    .skillsList{
+        position: relative ;
+        width: 90% ;
+    }
+    .skillsList ul{
+        grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    }
+    .skillsList ul li{
+        width: 100%;
+        display: flex ;
+        align-items: center ;
+        justify-content: space-between;
+        right: 30px;
+    }
+    .skillsList ul li span{
+        text-align: end;
+    }
+
 
 
 }
