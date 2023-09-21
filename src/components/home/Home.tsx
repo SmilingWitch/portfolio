@@ -4,6 +4,7 @@ import  { useEffect, useRef, useState } from 'react';
 import MainButton from "../mainButton/MainButton";
 import { Link } from 'react-router-dom';
 import {motion} from 'framer-motion'
+import Moon from "../moon/Moon";
 
 function Home() {
     return (
@@ -18,7 +19,7 @@ function Home() {
                     <div className="line" style={{ "--i": 8 } as React.CSSProperties}></div>
                     <div className="line" style={{ "--i": 10 } as React.CSSProperties}></div>
                     <div className="line" style={{ "--i": 3 } as React.CSSProperties}></div>
-                    <div className="line" style={{ "--i": 8 } as React.CSSProperties}></div>
+                    <div className="line" style={{ "--i": 5 } as React.CSSProperties}></div>
                     <div className="line" style={{ "--i": 5 } as React.CSSProperties}></div>
                     <div className="line" style={{ "--i": 8 } as React.CSSProperties}></div>
                     <div className="line" style={{ "--i": 10 } as React.CSSProperties}></div>
@@ -37,7 +38,7 @@ function Home() {
                     <div className="star" style={{ "--j": 3 } as React.CSSProperties}>
                         <BsStarFill></BsStarFill>
                     </div>
-                    <div className="star" style={{ "--j": 8 } as React.CSSProperties}>
+                    <div className="star" style={{ "--j": 5 } as React.CSSProperties}>
                         <BsStarFill></BsStarFill>
                     </div>
                     <div className="star" style={{ "--j": 5 } as React.CSSProperties}>
@@ -57,22 +58,20 @@ function Home() {
             </div>
             <div className="cont2">
                 <div className="moonBx" >
-                    <div className="moon1"></div>
-                    <div className="moon2"></div>
-                    <div className="moon3"> </div>
-                    <img src="moon.svg" alt="" />
-                    
+                <Moon moonSize= {400} light1= {350} light2 = {300} iconsize= {450}/>
                 </div>
                 <div className="info">
                     <div className="centerContent">
-                        <div className="header">Daniela Yero</div>
+                        <div className="header">
+                            <div className="name">Daniela Yero</div>
+                            <div className="occupation">- Front End Developer -</div> 
+                        </div>
                         <Link to= "/portfolio/about">
                             <div className="principalBtn">
                                 <MainButton info ="Meet me" ></MainButton>
                             </div>
                         </Link>
                     </div>
-                    
                 </div>
             </div>
         </motion.div>
