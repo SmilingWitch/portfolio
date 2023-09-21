@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './components/home/Home'
 import Projects from './components/projects/Projects'
 import {AnimatePresence} from 'framer-motion'
+import Moon from './components/moon/Moon'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
               <Route path = "portfolio/about" element = {<Projects/>}/>
         </Routes>
   </Router>
+  
     </AnimatePresence>
 
     
