@@ -3,6 +3,10 @@
     font-family: 'Losta Masta';
     src: url('/Deelishes-Regular.ttf') format('truetype'); 
   }
+  @font-face {
+    font-family: 'JosefinLight';
+    src: url('/JosefinSans-ExtraLight.ttf');
+  }
 
 .background1{
     position: relative ;
@@ -62,7 +66,7 @@
     color: rgba(17, 157, 221, 0.829);
     font-size: 2em;
     text-align: center;
-    font-weight: lighter;
+    font-family: 'JosefinLight';
     top: 45px;
 }
 .gif1{

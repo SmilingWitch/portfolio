@@ -12,8 +12,8 @@ function Contact() {
                         Let’s Build Something Together
                     </div>
                     <div className="socialMedia1">
-                        <div className="email">
-                            danielitayero@gmail.com
+                        <div className="email" onClick={() => window.open("mailto:danielitayero@gmail.com")}>
+                        <a href="mailto:danielitayero@gmail.com"  >danielitayero@gmail.com</a>
                         </div>
                     </div>
             

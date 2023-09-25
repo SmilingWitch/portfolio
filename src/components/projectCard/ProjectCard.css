@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'JosefinLight';
+    src: url('/JosefinSans-ExtraLight.ttf');
+  }
 
 .projectCardBx{
     position: relative ;
@@ -45,7 +49,7 @@
 
 }
 .projectName a span{
-    font-weight: lighter;
+    font-family: 'JosefinLight';
     color: rgb(17, 157, 221);
 }
 
@@ -56,7 +60,6 @@
     color: rgb(194, 197, 228);
     font-size: 20px; 
     z-index: 3;
-    font-family: 'Emberly';
 }
 .number{
     font-size:25px ;

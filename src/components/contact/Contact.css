@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'JosefinLight';
+    src: url('/JosefinSans-ExtraLight.ttf');
+  }
+
 .MoonCont{
     position: relative ;
     width: 100%;
@@ -10,7 +15,7 @@
         width: 80%;
         font-size: 2em;
         text-align: start;
-        font-weight: lighter;
+        font-family: 'JosefinLight';
         text-transform: uppercase;
         margin: 0 auto;
         color: rgb(194, 197, 228);  
@@ -68,7 +73,7 @@
     width: 350px ;
     height: 350px ;
     border-radius: 50% ;
-    border-top: solid 2px blue;
+    /*border-top: solid 2px blue;*/
     display: flex ;
     align-items: start ;
     justify-content: center;  

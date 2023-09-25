@@ -32,9 +32,9 @@ interface ProjectCardProps extends PropsWithChildren<{
                     </div>
                     <p data-aos="fade-left">{props.info}</p>
                 </div>
-                <div className="img" data-aos="flip-right" >
+                <a href={props.urlInfo} className="img" data-aos="flip-right" >
                     <img src={props.urlPhoto} alt="" />
-                </div>
+                </a>
 
             </div>
 
