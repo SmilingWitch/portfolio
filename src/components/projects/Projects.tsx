@@ -71,11 +71,20 @@ function Projects() {
             <div className="frontBack">
                 <div  
                     className="section first">
+                    <ProjectCard  name = "Mobilaria investment platform"  
+                                urlPhoto = "./Yield.png" 
+                                urlInfo = "https://dev.yield.ph/"
+                                info ="Site made with Next.js, functional and secure, highlighting properties, online investment process and performance calculators (currently under development)."
+                                number = {1} >
+                    </ProjectCard>
+                </div>
+                <div  
+                    className="section first">
                     <ProjectCard  name = "Yield Farming Platform"  
                                 urlPhoto = "./pokeroi.png" 
                                 urlInfo = "https://smilingwitch.github.io/dex-ui/"
                                 info ="A Web3 platform interface for cryptocurrency exchange"
-                                number = {1} >
+                                number = {2} >
                     </ProjectCard>
                 </div>
                 <div className="section four">
@@ -83,7 +92,7 @@ function Projects() {
                                 urlPhoto = "./Clinic.png" 
                                 urlInfo = "https://smilingwitch.github.io/clinic/"
                                 info ="Multiservice clinic with online appointment" 
-                                number = {2}>
+                                number = {3}>
                     </ProjectCard>
                 </div>
                 <div className="section therd">
@@ -91,17 +100,17 @@ function Projects() {
                                 urlPhoto = "./cactus.png" 
                                 urlInfo = "https://github.com/SmilingWitch/cactus-store"
                                 info ="E-commerce of cactus. Fully responsive, authentication with json web tokens and cart in Local Storage." 
-                                number = {3}>
+                                number = {4}>
                     </ProjectCard>
                 </div>
-                <div className="section second">
+                {/*<div className="section second">
                     <ProjectCard  name = "Pet Park"  
                                 urlPhoto = "./PetPark.png" 
                                 urlInfo = "https://github.com/SmilingWitch/petpark-ui"
                                 info ="Website for pet adoption and the purchase of pet supplies(under development)" 
                                 number = {4}>
                     </ProjectCard>
-                </div> 
+                </div> */}
     <Contact/>
     </div>
 
