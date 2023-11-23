@@ -152,7 +152,11 @@
     width: 100% ;
     height: 100%;
 }
-
+.logo.next{
+    background: white;
+    border-radius: 50%;
+    padding: 2px;
+}
 /*------------ANIMACIONES---------------*/
 @keyframes line_animation{
     0%{
