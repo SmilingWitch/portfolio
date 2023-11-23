@@ -12,6 +12,7 @@ import html from "./html-1.svg"
 import git from "./git-icon.svg"
 import vite from "./vitejs.svg"
 import react from "./react.svg"
+import next from "./nextjs.svg"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -83,6 +84,12 @@ function AboutMe() {
                                                 <img src={react} alt="" /> 
                                             </div>
                                             <span>React</span>
+                                        </li>
+                                        <li data-aos="fade-up">
+                                            <div className="logo next">
+                                                <img src={next} alt="" /> 
+                                            </div>
+                                            <span>Next</span>
                                         </li>
                                         <li data-aos="fade-up">
                                             <div className="logo">
