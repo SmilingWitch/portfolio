@@ -84,14 +84,9 @@
         position: absolute ;
         width: 150px ;
         height: 40px ;
-        top: 600px;
+        top: 700px;
     }
 }
-
-
-
-
-
 
 
 @media (max-width: 540px){
