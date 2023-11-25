@@ -71,7 +71,7 @@ function Projects() {
             <div className="frontBack">
                 <div  
                     className="section first">
-                    <ProjectCard  name = "Mobilaria investment platform"  
+                    <ProjectCard  name = "real estate investment platform"  
                                 urlPhoto = "./Yield.png" 
                                 urlInfo = "https://dev.yield.ph/"
                                 info ="Site made with Next.js, functional and secure, highlighting properties, online investment process and performance calculators (currently under development)."
